@@ -3,7 +3,7 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.jooq.trial</groupId>
+    <groupId>org.jooq</groupId>
     <artifactId>jooq-mcve</artifactId>
     <version>1.0</version>
     <name>jOOQ MCVE</name>
@@ -20,7 +20,7 @@
 
         <!-- Database access -->
         <dependency>
-            <groupId>org.jooq.trial</groupId>
+            <groupId>org.jooq</groupId>
             <artifactId>jooq</artifactId>
             <version>${org.jooq.version}</version>
         </dependency>
@@ -81,7 +81,7 @@
             </plugin>
 
             <plugin>
-                <groupId>org.jooq.trial</groupId>
+                <groupId>org.jooq</groupId>
                 <artifactId>jooq-codegen-maven</artifactId>
                 <version>${org.jooq.version}</version>
 
@@ -106,6 +106,7 @@
                                 </database>
                                 <generate>
                                     <generatedAnnotation>false</generatedAnnotation>
+                                    <javaTimeTypes>true</javaTimeTypes>
                                 </generate>
                                 <target>
                                     <packageName>org.jooq.mcve</packageName>

@@ -5,6 +5,7 @@ CREATE SCHEMA mcve;
 CREATE TABLE mcve.test (
   id    INT NOT NULL AUTO_INCREMENT,
   value INT,
+  some_date DATE,
   
   CONSTRAINT pk_test PRIMARY KEY (id) 
 );
